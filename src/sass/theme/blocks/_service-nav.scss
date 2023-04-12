@@ -7,7 +7,7 @@
     &__inner {
         display: grid;
         margin-inline: auto;
-        max-width: 1320px;
+        // max-width: 1320px;
         
         @media (min-width:768px) {
             grid-template-columns: repeat(2, 1fr);

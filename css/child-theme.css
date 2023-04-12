@@ -22449,7 +22449,6 @@ footer .footer-rmi {
 .service-nav__inner {
   display: grid;
   margin-inline: auto;
-  max-width: 1320px;
 }
 @media (min-width: 768px) {
   .service-nav__inner {
