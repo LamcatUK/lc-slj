@@ -1,0 +1,35 @@
+.nav_card {
+    text-decoration: none;
+    &:hover {
+        .nav_card__title {
+            background-color: var(--clr-light-200);
+        }
+        .nav_card__image {
+            filter: grayscale(1);
+            img {
+                transform: scale(1.02);
+            }
+        }
+    }
+    &__image {
+        aspect-ratio: 32 / 30;
+        object-fit: contain;
+        overflow: hidden;
+        img {
+            transition: all var(--transition-duration) ease;
+        }
+    }
+
+    &__title {
+        transition: all var(--transition-duration) ease;
+        background-color: var(--clr-light-300);
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-family: var(--ff-heading);
+        font-weight: var(--fw-600);
+        text-transform: uppercase;
+    }
+}

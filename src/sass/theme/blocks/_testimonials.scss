@@ -1,0 +1,9 @@
+.testimonial {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--clr-light-300);
+    &__cite {
+        font-weight: 600;
+        font-family: var(--ff-heading);
+    }
+}

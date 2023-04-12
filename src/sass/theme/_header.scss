@@ -1,0 +1,186 @@
+#navbar {
+
+    .navbar-brand {
+        margin:0;
+    }
+
+    @media (min-width:992px) {
+        .container-xl {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    background-color: var(--clr-white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: var(--ff-heading);
+    text-transform: uppercase;
+    a {
+        font-size: var(--fs-400);
+        color: var(--clr-black);
+        transition: opacity var(--transition-duration) ease;
+        text-decoration: none;
+        &:not(.navbar-brand):hover {
+            opacity: 0.8;
+        }
+    }
+
+    .current_page_item a {
+        text-decoration: underline;
+    }
+    .current-menu-parent>a {
+        text-decoration: underline;
+    }
+
+
+    @media (max-width:991px) {
+
+        .container-xl {
+            padding: 0;
+            .d-lg-none.d-flex {
+                flex: 1;
+            }
+        }
+        #main-menu {
+            height: 100vh;
+        }
+        #main-menu > li {
+            border-bottom: 1px solid var(--clr-light-300);
+        }
+        #main-menu a {
+            padding: 0.75rem 1rem ;
+        }
+        .dropdown-menu.show {
+            border: 0;
+            padding: 0;
+            .dropdown-item {
+                // padding: 0;
+                text-transform: initial;
+                border-top: 1px solid var(--clr-light-300);
+                padding-left: 2rem !important;
+            }
+            .current_page_item a {
+                text-decoration: none;
+                font-weight: var(--fw-600);
+            }
+        
+        }
+    }
+
+
+    // dropdowns
+    @media (min-width:992px) {
+
+        a {
+            font-size: var(--fs-200);
+        }
+
+        .dropdown {
+            position: unset;
+        }
+        .dropdown-menu.show {
+            display: flex;
+            width: 100%;
+            height: 6rem;
+            justify-content: center;
+            border-radius: 0;
+            background-color: var(--clr-light-300);
+            padding: 0;
+            margin-top: 0;
+            border: none;
+            li {
+                display: flex;
+                align-items: center;
+                width: 220px;
+                text-align: center;
+                border-right: 1px solid var(--clr-white);
+                &.current-menu-item {
+                    background-color: var(--clr-light-200);
+                }
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                text-decoration: none;
+            }
+            li:first-child {
+                border-left: 1px solid var(--clr-white);
+            }
+            .dropdown-item {
+                white-space: normal;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        color: black;
+        width: 40px;
+        // margin-right: 1rem;
+        font-family: "Font Awesome 6 Free";
+        &:focus {
+            border: none !important;
+            box-shadow: none !important;
+        }
+        .close-icon,
+        &.collapsed .close-icon {
+            display: none;
+        }
+        &:not(.collapsed) .close-icon {
+            display: inline !important;
+        }
+        &:not(.collapsed) .navbar-icon {
+            display: none !important;
+        }
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: 0;
+    }
+
+
+    .dropdown-toggle::after {
+        transition: transform var(--transition-duration) ease;
+    }
+    .dropdown-toggle:not(.show)::after {
+        transform: rotate(-90deg);
+    }
+
+/*
+
+    padding-block: 0.75rem;
+
+    // &>.container-xl {
+    //     display: grid;
+    //     grid-template-columns: repeat(3,1fr);
+    // }
+
+
+
+    // toggler
+
+
+    .close-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+    }
+    .navbar-toggler.collapsed .close-icon {
+        display: none;
+    }
+
+    .navbar-toggler.collapsed .navbar-toggler-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+    }
+    .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+        display: none;
+    }
+
+    */
+
+}

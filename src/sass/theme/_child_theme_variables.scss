@@ -1,0 +1,60 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+
+
+:root {
+    --clr-light-100: #fdfcfa;
+    --clr-light-200: #f8f5f1;
+    // --clr-light-300: #e8dac4;
+    // --clr-light-300: #e6d2b6;
+    --clr-light-300: #e3ddcd;
+    --clr-light-900: #7c705f;
+    
+    --clr-dark-700: #292928;
+    --clr-dark-800: #003938;
+    // --clr-dark-900: #0c282b;
+    --clr-dark-900: #0c1e20;
+
+    --clr-green-400: #022c2a;
+    // --clr-green-400-tx: hsla( 149, 40%, 30%, .8);
+
+    --clr-grey-300: #d5d5d5;
+    --clr-grey-400: #b9b8b7;
+    --clr-grey-400-tx: hsla(30, 1%, 72%, .25);
+
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+
+
+    --fw-400: 400;
+    --fw-600: 600;
+
+    --fs-base: 18px;
+
+    --fs-100: 0.722rem; // 13  mouse
+    --fs-200: 0.833rem; // 15  nav
+    --fs-400: 1rem;     // 18 body
+    --fs-450: 1.111rem;  // 20 xs title
+    --fs-500: 1.222rem;  // 22 sm title
+    --fs-600: 1.389rem;  // 25 title
+
+    --ff-heading: 'Josefin Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --ff-body: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif;
+
+    --transition-duration: 0.4s;
+
+}
+
+$primary: #0c282b;
+$secondary: #b9b8b7;
+
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1130px,
+//   xxl: 1130px
+// );

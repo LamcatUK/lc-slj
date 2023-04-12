@@ -1,0 +1,23 @@
+.one_col_title__title,
+.two_col_title__title {
+    text-align: center;
+    font-family: var(--ff-heading);
+    font-size: var(--fs-600);
+    color: var(--clr-dark-700);
+}
+@media (min-width:768px) {
+    .two_col_content {
+        columns: 2;
+        column-rule: solid 1px var(--clr-light-300);
+        column-gap: 3rem;
+        hr {
+            visibility: hidden;
+            margin: 0;
+        }
+        hr,
+        h3, .h3,
+        h2, .h2 {
+            break-before: column;
+        }
+    }
+}

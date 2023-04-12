@@ -1,0 +1,17 @@
+.three_images__container {
+    background-color: var(--clr-light-200);
+}
+.three_images {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    place-content: center;
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

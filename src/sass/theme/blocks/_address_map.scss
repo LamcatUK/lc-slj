@@ -1,0 +1,24 @@
+.address_map {
+    h2 {
+        font-size: var(--fs-600);
+        text-transform: initial;
+        margin-bottom: 1rem;
+    }
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-400);
+    a {
+        font-weight: var(--fw-600);
+        text-decoration: none;
+    }
+    .arrowlink {
+        &::after {
+            content: " >";
+            transition: all var(--transition-duration) ease;
+        }
+        &:hover {
+            &::after {
+                margin-left: 0.25rem;
+            }
+        }
+    }
+}

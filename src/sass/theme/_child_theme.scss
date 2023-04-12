@@ -1,0 +1,167 @@
+@import "mixins";
+@import "typography";
+@import "buttons";
+@import "header";
+@import "footer";
+@import "case_studies";
+@import "blocks/blocks";
+
+:root {
+    --margin-top--mobile: 52px;
+    --margin-top--sm-desktop: 100px;
+    --margin-top--lg-desktop: 115px;
+    --footer-height--mobile: 72px;
+    --footer-height--desktop: 43px;
+}
+
+main {
+    margin-top: var(--margin-top--mobile);
+    @media (min-width:992px) {
+        margin-top: var(--margin-top--sm-desktop);
+    }
+    @media (min-width:1200px) {
+        margin-top: var(--margin-top--lg-desktop);
+    }
+    // min-height: calc(100vh - var(--margin-top--mobile) - var(--footer-height--mobile));
+    // @media (min-width:768px) {
+    //     min-height: calc(100vh - var(--margin-top--desktop) - var(--footer-height--desktop));
+    // }
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -115px;
+    visibility: hidden;
+}
+
+a.noline {
+    text-decoration: none;
+}
+
+.cols-lg-2 {
+    @media (min-width:992px) {
+        columns: 2;
+    }
+}
+
+.break-out{
+    width: 100vw;
+    position: relative;
+    left: calc(-1 * (100vw - 100%) / 2);
+}
+
+/* utilities */
+
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+.fw-600 {
+    font-weight: var(--fw-600);
+}
+.fw-900 {
+    font-weight: var(--fw-900);
+}
+
+
+.text-light-300 {
+    color: var(--clr-light-300) !important;
+}
+
+
+.grid {
+    display: grid;
+}
+
+//slider 
+.slick-prev::before,
+.slick-next::before {
+    font-family: "Font Awesome 6 Free" !important;
+    color: var(--clr-light-900) !important;
+    font-weight: 900;
+}
+.slick-prev {
+    left: -12px !important;
+}
+.slick-next {
+    right: -12px !important;
+}
+
+//colours 
+.has-slj-light-background-color {
+    background-color: var(--clr-light-200);
+}
+.has-slj-dark-background-color {
+    background-color: var(--clr-dark-900);
+    color: var(--clr-grey-300);
+}
+
+.has-slj-dark-text-color {
+    color: var(--clr-dark-900);
+}
+
+// icons
+
+.icon {
+    position: relative;
+    &::before {
+        content: "";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        margin-right: 0.25rem;
+    }
+}
+
+.icon--phone {
+    &::before {
+        content: "\f879";
+    }
+}
+.icon--close {
+    cursor: pointer;
+    color: var(--clr-grey-400);
+    transition: color var(--transition-duration) ease;
+    &:hover {
+        color: var(--clr-dark-900);
+    }
+    &::before {
+        content: "\f00d";
+    }
+}
+
+
+/* form stuff */
+.form-control,
+.form-select {
+    border-radius: 0.25rem !important;
+}
+
+
+.form-label {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    font-size: 0.889rem;
+}
+
+.wpcf7-acceptance {
+    .wpcf7-list-item {
+        margin-left: 0 !important;
+        margin-bottom: 1rem;
+        label {
+            font-size: 0.889rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    .frmCheck {
+        margin-top: 0.25rem;
+        margin-right: 0.5rem;
+    }
+}
+
+
+.wp-block-columns {
+    gap: 0.5rem;
+}

@@ -1,0 +1,48 @@
+.parade {
+    background-color: var(--clr-light-200);
+    .parade_card {
+        display: block;
+        text-decoration: none;
+        margin-inline: 0.5rem;
+        padding: 0.5rem;
+        transition: all var(--transition-duration) ease;
+        img {
+            height: 90px;
+            width: auto;
+            max-width: 70%;
+            object-position: bottom;
+        }
+
+        &__title {
+            text-transform: uppercase;
+            font-family: var(--ff-heading);
+            font-size: var(--fs-450);
+            color: var(--clr-black);
+        }
+
+        &__year {
+            text-transform: uppercase;
+            font-family: var(--ff-heading);
+            font-size: var(--fs-450);
+            font-weight: var(--fw-600);
+            color: var(--clr-light-900);
+        }
+
+        &__link {
+            font-family: var(--ff-heading);
+            font-size: var(--fs-400);
+            font-weight: var(--fw-600);
+            color: var(--clr-black);
+            &::after {
+                content: " >";
+                transition: all var(--transition-duration) ease;
+            }
+        }
+        &:hover {
+            background-color: var(--clr-light-100);
+            .parade_card__link::after {
+                margin-left: 0.25rem;
+            }
+        }
+    }
+}

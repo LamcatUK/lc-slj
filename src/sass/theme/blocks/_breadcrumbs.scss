@@ -1,0 +1,26 @@
+.breadcrumbs {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-100);
+    text-transform: uppercase;
+    a {
+        font-family: var(--ff-heading);
+        font-size: var(--fs-100);
+        text-transform: uppercase;
+        transition: all var(--transition-duration) ease;
+        text-decoration: none;
+    }
+    p {
+        margin-bottom: 0;
+    }
+
+    &.has-slj-dark-background-color {
+        a {
+            color: var(--clr-grey-300);
+            text-decoration: none;
+            &:hover {
+                color: var(--clr-white);
+            }
+        }
+    }
+
+}

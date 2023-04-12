@@ -1,0 +1,32 @@
+.contact_form {
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-400);
+    h2 {
+        font-size: var(--fs-600);
+        text-transform: initial;
+        margin-bottom: 1rem;
+    }
+
+    .wpcf7 {
+        max-width: unset;
+    }
+    .form-control::placeholder {
+        color: var(--clr-grey-300);
+        opacity: 1;
+    }
+    .wpcf7-acceptance input {
+        margin-right: 0.5rem;
+    }
+    .wpcf7-not-valid {
+        border-color: orangered !important;
+    }
+    .wpcf7-not-valid-tip {
+        margin-top: 0.25rem;
+    }
+
+    .wpcf7 input[type=submit] {
+        background-color: var(--clr-dark-800);
+        color: var(--clr-light-300);
+        border-radius: 10rem !important;
+    }
+}
