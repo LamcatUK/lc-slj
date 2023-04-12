@@ -11,7 +11,9 @@
     place-content: center;
     img {
         height: 100%;
+        width: 100%;
         object-fit: cover;
         object-position: center;
+        aspect-ratio: 4 / 3;
     }
 }
