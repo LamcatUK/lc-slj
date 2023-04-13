@@ -22402,7 +22402,7 @@ footer .footer-rmi {
   margin-bottom: 1rem;
 }
 .short_hero .right-third {
-  left: 33%;
+  left: 32%;
   margin-left: -33vw;
   max-width: 100vw;
   position: relative;
@@ -22821,10 +22821,11 @@ h3, .h3 {
   min-height: 560px;
 }
 
-.text-half {
-  min-height: 560px;
+@media (min-width: 992px) {
+  .text-half {
+    min-height: 560px;
+  }
 }
-
 .half-fluid {
   overflow: hidden;
 }

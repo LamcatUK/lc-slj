@@ -2,8 +2,10 @@
     position: relative;
     min-height: 560px;
 }
-.text-half {
-    min-height: 560px;
+@media (min-width:992px) {
+    .text-half {
+        min-height: 560px;
+    }
 }
 
 .half-fluid {
