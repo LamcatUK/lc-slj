@@ -97,7 +97,7 @@ do_action('wp_body_open');
                     <a href="tel:<?=parse_phone(get_field('contact_phone', 'options'))?>"
                         class="nav-link icon icon--phone fs-400 pt-1"></a>
                 </div>
-                <a href="#" class="navbar-brand d-lg-none"><img width="50" height="50"
+                <a href="/" class="navbar-brand d-lg-none"><img width="50" height="50"
                         src="<?=get_stylesheet_directory_uri()?>/img/slj-logo--dark.png"
                         alt="Spencer Lane-Jones"></a>
                 <div class="d-lg-none d-flex justify-content-end">

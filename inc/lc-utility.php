@@ -87,7 +87,7 @@ add_shortcode('social_ig_banner', function ($atts) {
     $social = get_field('social', 'options');
     $igurl = $social['instagram_url'];
     if ($igurl != '') {
-        $class = 'd-block py-4 text-center ';
+        $class = 'd-block py-4 text-center mx-auto w-75 ';
         $class .= esc_attr($atts['class']);
         $short = basename($igurl);
         $output = <<<EOT
