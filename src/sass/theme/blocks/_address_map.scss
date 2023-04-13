@@ -1,4 +1,10 @@
 .address_map {
+    @media (max-width:595px) {
+        .container-xl {
+            max-width: 90vw;
+        }
+    }
+    
     h2 {
         font-size: var(--fs-600);
         text-transform: initial;
