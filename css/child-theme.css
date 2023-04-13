@@ -22449,11 +22449,7 @@ footer .footer-rmi {
 .service-nav__inner {
   display: grid;
   margin-inline: auto;
-}
-@media (min-width: 768px) {
-  .service-nav__inner {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-columns: repeat(2, 1fr);
 }
 @media (min-width: 992px) {
   .service-nav__inner {
@@ -22475,6 +22471,7 @@ footer .footer-rmi {
   transition: all var(--transition-duration) ease;
   padding: 1rem;
   border-right: 1px solid var(--clr-white);
+  border-bottom: 1px solid var(--clr-white);
   text-decoration: none;
 }
 .service-nav__inner a:hover {
@@ -23217,6 +23214,16 @@ a.noline {
 
 .wp-block-columns {
   gap: 0.5rem;
+}
+
+.order-flip-mobile > .wp-block-group__inner-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 576px) {
+  .order-flip-mobile > .wp-block-group__inner-container {
+    flex-direction: column;
+  }
 }
 
 /* Slider */

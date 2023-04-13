@@ -165,3 +165,12 @@ a.noline {
 .wp-block-columns {
     gap: 0.5rem;
 }
+
+
+.order-flip-mobile > .wp-block-group__inner-container {
+    display: flex;
+    flex-direction: column-reverse;
+    @media (min-width:576px) {
+        flex-direction: column;
+    }
+}
