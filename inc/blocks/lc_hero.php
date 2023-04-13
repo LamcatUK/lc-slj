@@ -40,7 +40,7 @@
             width="261" height="261">
         <h1 class="hero__title">
             <?=get_field('title')?>
-            new
+            newr
         </h1>
         <?php
             if (get_field('show_specialists')) {
