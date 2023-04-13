@@ -1,4 +1,11 @@
 .contact_form {
+
+    @media (max-width:595px) {
+        .container-xl {
+            max-width: 90vw;
+        }
+    }
+
     font-family: var(--ff-heading);
     font-weight: var(--fw-400);
     h2 {

@@ -22874,6 +22874,11 @@ h3, .h3 {
   font-family: var(--ff-heading);
   font-weight: var(--fw-400);
 }
+@media (max-width: 595px) {
+  .contact_form .container-xl {
+    max-width: 90vw;
+  }
+}
 .contact_form h2, .contact_form .h2 {
   font-size: var(--fs-600);
   text-transform: initial;
