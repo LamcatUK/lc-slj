@@ -22682,6 +22682,11 @@ h3, .h3 {
   color: var(--clr-dark-700);
 }
 
+.two_col_content {
+  max-width: 70vw;
+  margin-inline: auto;
+}
+
 @media (min-width: 768px) {
   .two_col_content {
     -moz-columns: 2;
