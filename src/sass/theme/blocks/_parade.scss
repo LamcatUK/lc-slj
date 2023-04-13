@@ -1,5 +1,12 @@
 .parade {
     background-color: var(--clr-light-200);
+
+    @media (max-width:595px) {
+        .container-xl {
+            max-width: 90vw;
+        }
+    }
+    
     .parade_card {
         display: block;
         text-decoration: none;
