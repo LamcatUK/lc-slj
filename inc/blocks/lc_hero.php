@@ -39,7 +39,7 @@
             src="<?=get_stylesheet_directory_uri()?>/img/slj-logo.png"
             width="261" height="261">
         <h1 class="hero__title">
-            <?=get_field('title')?>
+            <?=get_field('title')?>X
         </h1>
         <?php
             if (get_field('show_specialists')) {
