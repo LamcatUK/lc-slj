@@ -19,7 +19,7 @@
                 <p><?=get_field('opening_hours', 'options')?>
                 </p>
             </div>
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-5 col-lg-4">
                 <iframe class="mb-4 d-block"
                     src="<?=get_field('maps_id', 'options')?>"
                     width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
