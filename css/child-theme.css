@@ -22708,6 +22708,12 @@ h3, .h3 {
     -moz-column-break-before: column;
     break-before: column;
   }
+  @supports not ((-moz-column-break-before: column) or (break-before: column)) {
+    .two_col_content p {
+      -moz-column-break-inside: avoid;
+      break-inside: avoid;
+    }
+  }
 }
 .parade {
   background-color: var(--clr-light-200);
