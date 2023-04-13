@@ -22162,6 +22162,7 @@ footer a:hover {
 }
 footer .footer-main {
   border-bottom: 1px solid var(--clr-grey-400-tx);
+  max-width: 70vw;
 }
 footer ul {
   list-style: none;

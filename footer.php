@@ -12,8 +12,8 @@ defined('ABSPATH') || exit;
 ?>
 <footer class="">
     <div class="footer-main container-xl py-5">
-        <div class="row">
-            <div class="col-md-3 d-flex flex-column justify-content-between">
+        <div class="row gy-4">
+            <div class="col-md-3 d-flex flex-md-column justify-content-evenly justify-content-md-between">
                 <div>
                     <img src="<?=get_stylesheet_directory_uri()?>/img/slj-logo.png"
                         width="200" height="200" class="footer-logo">
@@ -32,7 +32,7 @@ defined('ABSPATH') || exit;
                 <div class="footer-phone">
                     <?=do_shortcode('[contact_phone]')?>
                 </div>
-                <div class="footer-email mb-5">
+                <div class="footer-email mb-4 mb-md-5">
                     <?=do_shortcode('[contact_email]')?>
                 </div>
                 <div>

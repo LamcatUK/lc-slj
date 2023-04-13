@@ -93,7 +93,7 @@ add_shortcode('social_ig_banner', function ($atts) {
         $output = <<<EOT
 <div class="{$class}">
     <i class="fa-brands fa-instagram fa-2x mb-3"></i><br>
-    Follow us on Instagram <a href="{$igurl}" target="_blank" class="ff-heading">#{$short}</a>
+    <div class="fs-5">Follow us on Instagram <a href="{$igurl}" target="_blank" class="ff-heading">#{$short}</a></div>
 </div>
 EOT;
     }
