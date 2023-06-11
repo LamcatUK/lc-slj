@@ -83,20 +83,21 @@
 
 }
 
+.bc {
+    a, h1 {
+        text-decoration: none;
+        font-family: var(--ff-heading);
+        color: var(--clr-light-300);
+        text-transform: uppercase;
+        color: inherit;
+        display: inline;
+        font-size: inherit;
+    }
+}
+
 .single-case-studies {
     .cs-hero {
         position: relative;
-        .bc {
-            a, h1 {
-                text-decoration: none;
-                font-family: var(--ff-heading);
-                color: var(--clr-light-300);
-                text-transform: uppercase;
-                color: inherit;
-                display: inline;
-                font-size: inherit;
-            }
-        }
 
     }
 

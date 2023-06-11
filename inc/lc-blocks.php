@@ -15,6 +15,16 @@ function acf_blocks()
             'supports' => array('mode' => false, 'anchor' => true),
         ));
         acf_register_block(array(
+            'name'				=> 'SLJ Plain Hero',
+            'title'				=> __('SLJ Plain Hero'),
+            'description'		=> __(''),
+            'render_template'	=> 'inc/blocks/lc_plain_hero.php',
+            'category'			=> 'layout',
+            'icon'				=> 'excerpt-view',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false, 'anchor' => true),
+        ));
+        acf_register_block(array(
             'name'				=> 'SLJ Home Hero',
             'title'				=> __('SLJ Home Hero'),
             'description'		=> __(''),
