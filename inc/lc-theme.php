@@ -25,6 +25,11 @@ function widgets_init()
     unregister_sidebar('footerfull');
     unregister_nav_menu('primary');
 
+
+    // if (! function_exists('wp_terms_checklist')) {
+    //     include ABSPATH . 'wp-admin/includes/template.php';
+    // }
+
     // colours
 
     add_theme_support(

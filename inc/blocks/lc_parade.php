@@ -2,22 +2,23 @@
     <div class="container-xl">
         <div class="parade__cards">
             <?php
-while (have_rows('cars', 'options')) {
-    the_row();
-    ?>
-            <a href="/gallery/?model=<?=get_sub_field('title')?>"
+            $terms = get_terms(array('taxonomy' => 'attachment_category','hide_empty' => false));
+            foreach ($terms as $t) {
+                $model = $t->slug;
+                ?>
+            <a href="/gallery/?model=<?=$model?>"
                 class="parade_card">
-                <img src="<?=get_sub_field('image')?>"
-                    alt="<?=get_sub_field('title')?>">
+                <img src="<?=get_field('image', $t)?>"
+                    alt="<?=$t->name?>">
                 <div class="parade_card__title">
-                    <?=get_sub_field('title')?>
+                    <?=$t->name?>
                 </div>
                 <div class="parade_card__year">
-                    <?=get_sub_field('years')?>
+                    <?=get_field('years', $t)?>
                 </div>
             </a>
             <?php
-}
+            }
             ?>
         </div>
     </div>

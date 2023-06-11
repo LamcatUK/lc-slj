@@ -22991,6 +22991,9 @@ h3, .h3 {
   margin-left: 0.25rem;
 }
 
+.gallery {
+  margin-bottom: 0;
+}
 .gallery h2, .gallery .h2 {
   max-width: 40ch;
   margin-inline: auto;
