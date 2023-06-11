@@ -86,59 +86,45 @@ defined('ABSPATH') || exit;
 do_action('wp_body_open');
 ?>
     <div class="site" id="page">
-        <nav id="navbar" class="fixed-top navbar navbar-expand-lg" aria-labelledby="main-nav-label">
-            <div class="container-xl">
-                <div class="d-lg-none d-flex">
-                    <button class="navbar-toggler collapsed" id="navToggle" data-bs-toggle="collapse"
-                        data-bs-target="#primaryNav" type="button">
-                        <span class="navbar-icon"><i class="fa-solid fa-bars"></i></span>
-                        <div class="close-icon py-1"><i class="fa-solid fa-times"></i></div>
-                    </button>
-                    <a href="tel:<?=parse_phone(get_field('contact_phone', 'options'))?>"
-                        class="nav-link icon icon--phone fs-400 pt-1"></a>
-                </div>
-                <a href="/" class="navbar-brand d-lg-none"><img width="50" height="50"
-                        src="<?=get_stylesheet_directory_uri()?>/img/slj-logo--dark.png"
-                        alt="Spencer Lane-Jones"></a>
-                <div class="d-lg-none d-flex justify-content-end">
-                    <?=do_shortcode(('[social_ig_icon class="nav-link"]'))?>
-                    <?=do_shortcode(('[social_fb_icon class="nav-link"]'))?>
-                </div>
-                <?php
-                wp_nav_menu(array(
-                    'theme_location'  => 'primary_nav',
-                    'container_class' => 'collapse navbar-collapse', // justify-content-start',
-                    'container_id'    => 'primaryNav',
-                    'menu_class'      => 'navbar-nav w-100 w-lg-50', // justify-content-between',
-                    'fallback_cb'     => '',
-                    'menu_id'         => 'main-menu',
-                    'depth'           => 2,
-                    'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                ));
-?>
-                <a class="d-none d-lg-block text-center navbarFullLogo" href="/">
+        <nav id="navbar" class="fixed-top navbar" aria-labelledby="main-nav-label">
+            <div id="navigation">
+                <button class="navbar-toggler collapsed" id="navToggle" data-bs-toggle="collapse"
+                    data-bs-target="#primaryNav" type="button">
+                    <span class="navbar-icon"><i class="fa-solid fa-bars"></i></span>
+                    <div class="close-icon py-1"><i class="fa-solid fa-times"></i></div>
+                </button>
+                <a class="text-center navbarFullLogo" href="/">
                     <img src="<?=get_stylesheet_directory_uri()?>/img/logo--full.png"
                         alt="Spencer Lane-Jones">
                 </a>
-                <div class="d-none d-lg-block text-end">
+                <div class="text-end">
                     <?php
                     $cls = basename(get_permalink()) == 'contact' ? 'current_page_item' : '';
 ?>
-                    <ul class="navbar-nav justify-content-end">
-                        <li class="<?=$cls?>"><a href="/contact/"
-                                class="nav-link">Contact</a></li>
+                    <ul class="navbar-nav d-flex flex-row justify-content-end gap-2">
                         <li><a href="tel:<?=parse_phone(get_field('contact_phone', 'options'))?>"
-                                class="nav-link icon icon--phone fs-400 pt-1"><?=get_field('contact_phone', 'options')?></a>
+                                class="nav-link icon icon--phone fs-500 pt-1"></a>
                         </li>
                         <li>
                             <?=do_shortcode(('[social_ig_icon class="nav-link"]'))?>
                         </li>
-                        <li>
+                        <!-- <li>
                             <?=do_shortcode(('[social_fb_icon class="nav-link"]'))?>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
-
             </div>
+            <?php
+            wp_nav_menu(array(
+'theme_location'  => 'primary_nav',
+'container_class' => 'collapse navbar-collapse', // justify-content-start',
+'container_id'    => 'primaryNav',
+'menu_class'      => 'navbar-nav w-100', // justify-content-between',
+'fallback_cb'     => '',
+'menu_id'         => 'main-menu',
+'depth'           => 2,
+'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+            ));
+?>
 
         </nav>

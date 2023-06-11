@@ -1,61 +1,3 @@
-.home-hero {
-    display: grid;
-    @media (min-width: 992px) {
-        grid-template-columns: 1fr 1fr;
-        height: 450px;
-    }
-    overflow: auto;
-
-    .carousel-inner {
-        height: 100%;
-        background-color: var(--clr-dark-900);
-        min-height: 400px;
-    }
-    .carousel-item {
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        @media (min-width: 992px) {
-            clip-path: ellipse(100% 150% at 0% 50%);
-        }
-    }
-
-    &__right {
-        background-color: var(--clr-dark-900);
-        color: var(--clr-light-100);
-        display: grid;
-        align-items: center;
-    }
-    &__right_inner {
-        display: grid;
-        place-content: center;
-        @media (min-width: 900px) {
-            max-width: 400px;
-            margin-left: 2rem;
-        }
-    }
-    &__logo {
-        margin: auto;
-        margin-bottom: 1rem;
-    }
-    &__title {
-        font-size: var(--fs-400);
-        margin: auto;
-        margin-bottom: 1rem;
-    }
-    &__specialists {
-        width: 340px;
-        margin-bottom: 0.5rem;
-    }
-    &__bristol {
-        width: 80px;
-        margin: auto;
-    }
-    .carousel-indicators {
-        display: none;
-    }
-}
-
 .hero {
     --hero-height: 70vh;
 
@@ -66,7 +8,7 @@
         img {
             height: var(--hero-height);
             object-fit: cover;
-            object-position: center;
+            object-position: bottom;
         }
     }
 
@@ -93,7 +35,7 @@
         background: linear-gradient(
             180deg,
             rgba(0,0,0,0.70) 0%,
-            rgba(255,255,255,0) 30%
+            rgba(255,255,255,0) 70%
         );
     }
 

@@ -15,6 +15,17 @@ function acf_blocks()
             'supports' => array('mode' => false, 'anchor' => true),
         ));
         acf_register_block(array(
+            'name'				=> 'SLJ Home Hero',
+            'title'				=> __('SLJ Home Hero'),
+            'description'		=> __(''),
+            'render_template'	=> 'inc/blocks/lc_home_hero.php',
+            'category'			=> 'layout',
+            'icon'				=> 'excerpt-view',
+            'keywords'			=> array( 'hero', 'slideshow' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false, 'anchor' => true),
+        ));
+        acf_register_block(array(
             'name'				=> 'SLJ Short Hero',
             'title'				=> __('SLJ Short Hero'),
             'description'		=> __(''),
@@ -209,6 +220,17 @@ function acf_blocks()
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
             'keywords'			=> array( 'testimonials' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false, 'anchor' => true, 'color' => true),
+        ));
+        acf_register_block(array(
+            'name'				=> 'SLG IG Banner',
+            'title'				=> __('SLJ Instagram Banner'),
+            'description'		=> __(''),
+            'render_template'	=> 'inc/blocks/lc_ig_banner.php',
+            'category'			=> 'layout',
+            'icon'				=> 'excerpt-view',
+            'keywords'			=> array( 'instagram' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true, 'color' => true),
         ));

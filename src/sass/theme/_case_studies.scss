@@ -1,3 +1,16 @@
+.cs-index {
+    .bc {
+        a, h1 {
+            text-decoration: none;
+            font-family: var(--ff-heading);
+            color: var(--clr-light-300);
+            text-transform: uppercase;
+            color: inherit;
+            display: inline;
+            font-size: inherit;
+        }
+    }
+}
 .case_studies {
     h2 {
         max-width: 38ch;
@@ -72,42 +85,21 @@
 
 .single-case-studies {
     .cs-hero {
-        --hero-height: 40vh;
-
-        height: var(--hero-height);
-        z-index: 0;
-
         position: relative;
-
-        .carousel-item {
-            img {
-                height: var(--hero-height);
-                object-fit: cover;
-                object-position: bottom;
+        .bc {
+            a, h1 {
+                text-decoration: none;
+                font-family: var(--ff-heading);
+                color: var(--clr-light-300);
+                text-transform: uppercase;
+                color: inherit;
+                display: inline;
+                font-size: inherit;
             }
         }
 
-        .overlay {
-            z-index: 1;
-            position: absolute;
-            inset: 0;
-            display: grid;
-            place-items: center;
-            height: 100%;
-            background: linear-gradient(
-                180deg,
-                rgba(0,0,0,0.70) 0%,
-                rgba(255,255,255,0) 70%
-            );
-        }
-
-        &__title {
-            font-size: 25px;
-            font-family: var(--ff-heading);
-            color: var(--clr-light-300);
-            text-transform: uppercase;
-        }
     }
+
 
     .cs-title {
         font-size: var(--fs-600);
@@ -115,7 +107,7 @@
     }
     .cs-date {
         font-size: var(--fs-400);
-        font-weight: var(--fw-600);
+        font-weight: var(--fw-400);
         font-family: var(--ff-heading);
     }
     .cs-model_image {

@@ -1,0 +1,11 @@
+.ig_banner {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        img {
+            aspect-ratio: 1;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

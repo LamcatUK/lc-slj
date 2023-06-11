@@ -1,13 +1,31 @@
 {
-    "key": "group_641f28a3dfcbc",
-    "title": "SLJ Three Images",
+    "key": "group_6485d20194f43",
+    "title": "SLJ Home Hero",
     "fields": [
         {
-            "key": "field_641f28a4279bd",
-            "label": "SLJ Three Images",
+            "key": "field_6485d20198ac8",
+            "label": "SLJ Home Hero",
             "name": "",
             "aria-label": "",
             "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Displays one or more images as a slideshow",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6485d2019c71a",
+            "label": "Title",
+            "name": "title",
+            "aria-label": "",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,39 +34,16 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "new_lines": "wpautop",
-            "esc_html": 0
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
-            "key": "field_641f28d882441",
-            "label": "Container?",
-            "name": "container",
-            "aria-label": "",
-            "type": "checkbox",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "Yes": "Yes"
-            },
-            "default_value": [],
-            "return_format": "",
-            "allow_custom": 0,
-            "layout": "",
-            "toggle": 0,
-            "save_custom": 0,
-            "custom_choice_button_text": "Add new choice"
-        },
-        {
-            "key": "field_6485d0db09f55",
-            "label": "Images",
-            "name": "images",
+            "key": "field_6485d201a400c",
+            "label": "Background",
+            "name": "background",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -68,7 +63,7 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_6485d0e209f56",
+                    "key": "field_6485d201a7aff",
                     "label": "Image",
                     "name": "image",
                     "aria-label": "",
@@ -90,8 +85,8 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "preview_size": "medium",
-                    "parent_repeater": "field_6485d0db09f55"
+                    "preview_size": "thumbnail",
+                    "parent_repeater": "field_6485d201a400c"
                 }
             ]
         }
@@ -101,7 +96,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/slj-three-images"
+                "value": "acf\/slj-home-hero"
             }
         ]
     ],
@@ -114,5 +109,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686491382
+    "modified": 1686491675
 }
