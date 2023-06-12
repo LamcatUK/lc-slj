@@ -22293,7 +22293,7 @@ footer .footer-rmi {
 @media (min-width: 992px) {
   .home-hero {
     grid-template-columns: 1fr 1fr;
-    height: 50vh;
+    height: max(60vh, 650px);
   }
 }
 .home-hero .carousel-inner {

@@ -2,7 +2,7 @@
     display: grid;
     @media (min-width: 992px) {
         grid-template-columns: 1fr 1fr;
-        height: 50vh;
+        height: max(60vh, 650px);
     }
     overflow: auto;
 
