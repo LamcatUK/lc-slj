@@ -20,6 +20,7 @@ add_shortcode('contact_phone', function ($atts) {
     $a = shortcode_atts(array(
         'class' => '',
     ), $atts);
+    $output = '';
     if (get_field('contact_phone', 'options')) {
         $output = '<a href="tel:' . parse_phone(get_field('contact_phone', 'options')) . '" class="phone ' . $a['class'] . '">' . get_field('contact_phone', 'options') . '</a>';
     }
@@ -29,6 +30,7 @@ add_shortcode('contact_email', function ($atts) {
     $a = shortcode_atts(array(
         'class' => '',
     ), $atts);
+    $output = '';
     if (get_field('contact_email', 'options')) {
         $output = '<a href="mailto:' . get_field('contact_email', 'options') . '" class="email noline ' . $a['class'] . '">' . get_field('contact_email', 'options') . '</a>';
     }
@@ -41,6 +43,7 @@ add_shortcode('social_fb_icon', function ($atts) {
     ), $atts);
     $social = get_field('social', 'options');
     $fburl = $social['facebook_url'];
+    $output = '';
     if ($fburl != '') {
         $output = '<a href="' . $fburl . '" target="_blank" class="' . esc_attr($atts['class']) . '"><i class="fa-brands fa-facebook-f"></i></a>';
     }
@@ -52,6 +55,7 @@ add_shortcode('social_ig_icon', function ($atts) {
     ), $atts);
     $social = get_field('social', 'options');
     $igurl = $social['instagram_url'];
+    $output = '';
     if ($igurl != '') {
         $output = '<a href="' . $igurl . '" target="_blank" class="' . esc_attr($atts['class']) . '"><i class="fa-brands fa-instagram"></i></a>';
     }
@@ -63,6 +67,7 @@ add_shortcode('social_tw_icon', function ($atts) {
     ), $atts);
     $social = get_field('social', 'options');
     $twurl = $social['twitter_url'];
+    $output = '';
     if ($twurl != '') {
         $output = '<a href="' . $twurl . '" target="_blank" class="' . esc_attr($atts['class']) . '"><i class="fa-brands fa-twitter"></i></a>';
     }
@@ -74,6 +79,7 @@ add_shortcode('social_li_icon', function ($atts) {
     ), $atts);
     $social = get_field('social', 'options');
     $liurl = $social['linkedin_url'];
+    $output = '';
     if ($liurl != '') {
         $output = '<a href="' . $liurl . '" target="_blank" class="' . esc_attr($atts['class']) . '"><i class="fa-brands fa-linkedin-in"></i></a>';
     }
@@ -86,6 +92,7 @@ add_shortcode('social_ig_banner', function ($atts) {
     ), $atts);
     $social = get_field('social', 'options');
     $igurl = $social['instagram_url'];
+    $output = '';
     if ($igurl != '') {
         $class = 'd-block py-4 text-center mx-auto w-75 ';
         $class .= esc_attr($atts['class']);
