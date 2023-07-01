@@ -39,7 +39,7 @@ $class = is_front_page() ? '' : 'main';
                 $model = get_field('vehicle_model');
 $name = $model->name;
 $img = get_field('model_image', $model);
-$imgsrc = get_field('image', $img);
+$imgsrc = wp_get_attachment_image_url(get_field('image', $img), 'large');
 ?>
                 <img class="cs-model_image" src="<?=$imgsrc?>"
                     alt="">
