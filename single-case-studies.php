@@ -36,22 +36,17 @@ $class = is_front_page() ? '' : 'main';
         <div class="row justify-content-center mb-5">
             <div class="col-md-8 col-lg-6">
                 <?php
-                $model = get_field('model_image');
-while (have_rows('cars', 'options')) {
-    the_row();
-    if (get_sub_field('title') == $model) {
-        ?>
-                <img class="cs-model_image"
-                    src="<?=get_sub_field('image')?>"
-                    alt="<?=get_sub_field('title')?>">
-                <?php
-    }
-}
+                $model = get_field('vehicle_model');
+$name = $model->name;
+$img = get_field('model_image', $model);
+$imgsrc = get_field('image', $img);
 ?>
+                <img class="cs-model_image" src="<?=$imgsrc?>"
+                    alt="">
                 <br>
                 <div class="cs-overview">
                     <div><strong>Vehicle Model:</strong>
-                        <?=get_field('vehicle_model')?>
+                        <?=$name?>
                     </div>
                     <div><strong>Registration:</strong>
                         <?=get_field('registration')?>

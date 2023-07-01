@@ -3,48 +3,11 @@
     "title": "CPT Case Study",
     "fields": [
         {
-            "key": "field_64206cb81188c",
-            "label": "Model Image",
-            "name": "model_image",
-            "aria-label": "",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "Bristol 400": "Bristol 400",
-                "Bristol 401\/403": "Bristol 401\/403",
-                "Bristol 402": "Bristol 402",
-                "Bristol 404": "Bristol 404",
-                "Bristol 405": "Bristol 405",
-                "Bristol 406": "Bristol 406",
-                "Bristol 407-410": "Bristol 407-410",
-                "Bristol 411": "Bristol 411",
-                "Bristol 412": "Bristol 412",
-                "Bristol 603": "Bristol 603",
-                "Bristol Brigand": "Bristol Brigand",
-                "Bristol Blenheim": "Bristol Blenheim",
-                "Bristol Fighter": "Bristol Fighter"
-            },
-            "default_value": false,
-            "return_format": "value",
-            "multiple": 0,
-            "allow_null": 0,
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
             "key": "field_64206d1b1188d",
             "label": "Vehicle Model",
             "name": "vehicle_model",
             "aria-label": "",
-            "type": "text",
+            "type": "taxonomy",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -53,11 +16,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "taxonomy": "attachment_category",
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "object",
+            "field_type": "select",
+            "allow_null": 0,
+            "multiple": 0
         },
         {
             "key": "field_64206d231188e",
@@ -231,5 +197,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686473486
+    "modified": 1688221673
 }
