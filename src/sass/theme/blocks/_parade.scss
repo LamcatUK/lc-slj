@@ -15,9 +15,12 @@
         transition: all var(--transition-duration) ease;
         img {
             height: 90px;
-            width: auto;
-            max-width: 70%;
+            aspect-ratio: 9 / 2;
+            object-fit: contain;
             object-position: bottom;
+            width: auto;
+            max-width: 80%;
+            margin-bottom: 0.5rem;
         }
 
         &__title {

@@ -22745,10 +22745,14 @@ h3, .h3 {
 }
 .parade .parade_card img {
   height: 90px;
-  width: auto;
-  max-width: 70%;
+  aspect-ratio: 9/2;
+  -o-object-fit: contain;
+  object-fit: contain;
   -o-object-position: bottom;
   object-position: bottom;
+  width: auto;
+  max-width: 80%;
+  margin-bottom: 0.5rem;
 }
 .parade .parade_card__title {
   text-transform: uppercase;
