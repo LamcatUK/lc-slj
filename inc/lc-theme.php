@@ -51,16 +51,6 @@ function widgets_init()
 add_action('widgets_init', 'widgets_init', 11);
 
 
-function my_custom_mime_types($mimes)
-{
-    // New allowed mime types.
-    $mimes['svg'] = 'image/svg+xml';
-          
-    return $mimes;
-}
-add_filter('upload_mimes', 'my_custom_mime_types');
-
-
 function cb_theme_enqueue()
 {
     $the_theme = wp_get_theme();
