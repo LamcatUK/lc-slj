@@ -23224,6 +23224,10 @@ a.noline {
   right: -12px !important;
 }
 
+.has-slj-extralight-background-color {
+  background-color: var(--clr-light-100);
+}
+
 .has-slj-light-background-color {
   background-color: var(--clr-light-200);
 }

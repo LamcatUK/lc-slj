@@ -36,6 +36,11 @@ function widgets_init()
         'editor-color-palette',
         array(
             array(
+                'name'  => esc_html__('Extra Light', 'lc-slj'),
+                'slug'  => 'slj-extralight',
+                'color' => '#f8f5f1',
+            ),
+            array(
                 'name'  => esc_html__('Light', 'lc-slj'),
                 'slug'  => 'slj-light',
                 'color' => '#e3DDCD',

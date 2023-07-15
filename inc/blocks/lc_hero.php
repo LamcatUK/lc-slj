@@ -35,20 +35,26 @@
     ?>
     </div>
     <div class="overlay">
+        <?php
+        if (get_field('show_logo')) {
+            ?>
         <img class="hero__logo"
             src="<?=get_stylesheet_directory_uri()?>/img/slj-logo.png"
             width="261" height="261">
+        <?php
+        }
+    ?>
         <h1 class="hero__title">
             <?=get_field('title')?>
         </h1>
         <?php
-            if (get_field('show_specialists')) {
-                ?>
+        if (get_field('show_specialists')) {
+            ?>
         <img class="hero__specialists"
             src="<?=get_stylesheet_directory_uri()?>/img/specialists.svg"
             width="860" height="181" alt="">
         <?php
-            }
+        }
     ?>
     </div>
 </section>
