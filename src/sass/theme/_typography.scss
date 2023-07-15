@@ -91,6 +91,11 @@ strong {
     font-weight: var(--fw-600);
 }
 
+.ff-normal {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-400);
+}
+
 .has-divider {
     position: relative;
     padding-bottom: 1rem;
