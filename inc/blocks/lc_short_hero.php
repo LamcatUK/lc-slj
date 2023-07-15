@@ -7,7 +7,7 @@
             </div>
             <div class="col-lg-8 py-5 ps-lg-5 left-side">
                 <img src="<?=get_stylesheet_directory_uri()?>/img/icon--<?=get_field('icon')?>--wo.svg"
-                    alt="<?=get_field('title')?>">
+                    alt="">
                 <h1><?=get_field('title')?></h1>
             </div>
         </div>
