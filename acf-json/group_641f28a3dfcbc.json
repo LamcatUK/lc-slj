@@ -1,10 +1,10 @@
 {
     "key": "group_641f28a3dfcbc",
-    "title": "SLJ Three Images",
+    "title": "SLJ Block Images",
     "fields": [
         {
             "key": "field_641f28a4279bd",
-            "label": "SLJ Three Images",
+            "label": "SLJ Block Images",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -12,7 +12,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "75",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -44,6 +44,31 @@
             "toggle": 0,
             "save_custom": 0,
             "custom_choice_button_text": "Add new choice"
+        },
+        {
+            "key": "field_64b299a7a9727",
+            "label": "Columns",
+            "name": "columns",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "2": "2",
+                "3": "3"
+            },
+            "default_value": 2,
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
         },
         {
             "key": "field_6485d0db09f55",
@@ -114,5 +139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686491382
+    "modified": 1689426364
 }
