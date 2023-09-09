@@ -2,6 +2,13 @@
     position: relative;
     min-height: 560px;
 }
+
+.text_image__image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+}
 // @media (min-width:992px) {
 //     .text-half {
 //         min-height: 560px;

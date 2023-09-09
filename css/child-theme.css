@@ -22911,6 +22911,15 @@ h3, .h3 {
   min-height: 560px;
 }
 
+.text_image__image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
 .contact_form {
   font-family: var(--ff-heading);
   font-weight: var(--fw-400);
