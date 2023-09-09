@@ -30,7 +30,7 @@ add_action('wp_footer', function () {
     jQuery(function($) {
         $('.parade__cards').slick({
             infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 4000,
@@ -44,9 +44,17 @@ add_action('wp_footer', function () {
                     }
                 },
                 {
-                    breakpoint: 992,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 2,
+                        slidesToScroll: 1,
+                        autoplay: true
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
                         slidesToScroll: 1,
                         autoplay: true
                     }
