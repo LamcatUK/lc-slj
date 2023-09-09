@@ -22377,6 +22377,7 @@ footer .footer-rmi {
   object-fit: cover;
   -o-object-position: top;
   object-position: top;
+  filter: grayscale(1);
 }
 .hero .carousel-indicators button {
   width: 60px;
