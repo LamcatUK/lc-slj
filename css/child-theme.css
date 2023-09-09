@@ -22067,8 +22067,7 @@ strong {
   max-height: 120px;
   margin-bottom: 0.5rem;
   display: block;
-  -webkit-margin-end: auto;
-  margin-inline-end: auto;
+  margin-inline: auto;
 }
 #navbar .navbarFullLogo.logo--short img {
   max-height: 80px;
