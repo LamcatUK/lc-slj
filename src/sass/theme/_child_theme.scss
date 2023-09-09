@@ -9,12 +9,16 @@
 :root {
     --margin-top--mobile: 52px;
     --margin-top--sm-desktop: 80px;
-    --margin-top--lg-desktop: 145px;
+    --margin-top--lg-desktop: 115px;
     --footer-height--mobile: 72px;
     --footer-height--desktop: 43px;
 }
 
 main {
+    &.front {
+        --margin-top--sm-desktop: 80px;
+        --margin-top--lg-desktop: 145px;
+    }
     margin-top: var(--margin-top--mobile);
     @media (min-width:992px) {
         margin-top: var(--margin-top--sm-desktop);
