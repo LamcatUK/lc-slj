@@ -22377,7 +22377,6 @@ footer .footer-rmi {
   object-fit: cover;
   -o-object-position: top;
   object-position: top;
-  filter: grayscale(1);
 }
 .hero .carousel-indicators button {
   width: 60px;
@@ -22433,6 +22432,7 @@ footer .footer-rmi {
 .short_hero .left-side img {
   max-width: 180px;
   margin-bottom: 1rem;
+  filter: grayscale(1);
 }
 .short_hero .right-third {
   left: 32%;
