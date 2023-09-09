@@ -22073,6 +22073,7 @@ strong {
 #navbar .navbarFullLogo.logo--short img {
   max-height: 80px;
   margin-bottom: 0;
+  margin-inline: auto;
 }
 #navbar .dropdown {
   position: unset;
