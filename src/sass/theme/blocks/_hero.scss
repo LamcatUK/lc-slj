@@ -1,8 +1,9 @@
 .home-hero {
     display: grid;
     @media (min-width: 992px) {
-        grid-template-columns: 1fr 1fr;
-        height: max(60vh, 650px);
+        // grid-template-columns: 1fr 1fr;
+        // height: max(60vh, 650px);
+        height: max(60vh, 530px);
     }
     overflow: auto;
 
@@ -14,10 +15,11 @@
     .carousel-item {
         height: 100%;
         background-size: cover;
-        background-position: center;
-        @media (min-width: 992px) {
-            clip-path: ellipse(100% 150% at 0% 50%);
-        }
+        // background-position: center;
+        background-position: 100% 75%;
+        // @media (min-width: 992px) {
+        //     clip-path: ellipse(100% 150% at 0% 50%);
+        // }
     }
 
     &__right {

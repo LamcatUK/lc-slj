@@ -36,6 +36,16 @@ add_shortcode('contact_email', function ($atts) {
     }
     return $output;
 });
+add_shortcode('contact_email_icon', function ($atts) {
+    $a = shortcode_atts(array(
+        'class' => '',
+    ), $atts);
+    $output = '';
+    if (get_field('contact_email', 'options')) {
+        $output = '<a href="mailto:' . get_field('contact_email', 'options') . '" class="email noline ' . $a['class'] . '"><i class="fa-solid fa-envelope"></i></a>';
+    }
+    return $output;
+});
 
 add_shortcode('social_fb_icon', function ($atts) {
     $atts = shortcode_atts(array(

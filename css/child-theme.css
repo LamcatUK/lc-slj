@@ -21993,11 +21993,12 @@ strong {
   font-size: var(--fs-400);
 }
 #navbar #navigation {
-  background-color: var(--clr-white);
+  background-color: var(--clr-dark-800);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding-block: 0.5rem;
+  padding-block: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
   width: 100%;
 }
 #navbar #navigation .text-end {
@@ -22005,7 +22006,7 @@ strong {
   margin-right: 1rem;
 }
 #navbar a {
-  color: var(--clr-black);
+  color: var(--clr-light-300);
   transition: opacity var(--transition-duration) ease;
   text-decoration: none;
   position: relative;
@@ -22050,9 +22051,11 @@ strong {
 }
 #navbar .navbarFullLogo {
   min-width: 200px;
+  color: var(--clr-light-300);
 }
 #navbar .navbarFullLogo img {
-  max-height: 80px;
+  max-height: 120px;
+  margin-bottom: 0.5rem;
 }
 #navbar .dropdown {
   position: unset;
@@ -22073,11 +22076,11 @@ strong {
   padding: 0.25rem 0 0.25rem 0.5rem;
 }
 #navbar .navbar-toggler {
-  color: black;
-  width: 40px;
+  color: var(--clr-light-300);
+  width: 90px;
   padding: 0;
-  margin-left: 1rem;
   font-family: "Font Awesome 6 Free";
+  position: relative;
 }
 #navbar .navbar-toggler:focus {
   border: none !important;
@@ -22092,9 +22095,22 @@ strong {
 #navbar .navbar-toggler:not(.collapsed) .navbar-icon {
   display: none !important;
 }
+@media (min-width: 768px) {
+  #navbar .navbar-toggler::after {
+    position: absolute;
+    content: "MENU";
+    font-family: var(--ff-heading);
+    font-size: var(--fs-100);
+    padding-top: 0.25rem;
+    padding-left: 0.25rem;
+  }
+}
 #navbar .navbar-toggler:focus,
 #navbar .navbar-toggler:active {
   outline: 0;
+}
+#navbar .nav-link {
+  padding-block: 0;
 }
 #navbar .dropdown-toggle::after {
   transition: transform var(--transition-duration) ease;
@@ -22298,8 +22314,7 @@ footer .footer-rmi {
 }
 @media (min-width: 992px) {
   .home-hero {
-    grid-template-columns: 1fr 1fr;
-    height: max(60vh, 650px);
+    height: max(60vh, 530px);
   }
 }
 .home-hero .carousel-inner {
@@ -22310,13 +22325,7 @@ footer .footer-rmi {
 .home-hero .carousel-item {
   height: 100%;
   background-size: cover;
-  background-position: center;
-}
-@media (min-width: 992px) {
-  .home-hero .carousel-item {
-    -webkit-clip-path: ellipse(100% 150% at 0% 50%);
-    clip-path: ellipse(100% 150% at 0% 50%);
-  }
+  background-position: 100% 75%;
 }
 .home-hero__right {
   background-color: var(--clr-dark-900);
@@ -23151,7 +23160,7 @@ h3, .h3 {
 :root {
   --margin-top--mobile: 52px;
   --margin-top--sm-desktop: 80px;
-  --margin-top--lg-desktop: 90px;
+  --margin-top--lg-desktop: 145px;
   --footer-height--mobile: 72px;
   --footer-height--desktop: 43px;
 }

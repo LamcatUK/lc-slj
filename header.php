@@ -96,14 +96,18 @@ do_action('wp_body_open');
                 <a class="text-center navbarFullLogo" href="/">
                     <img src="<?=get_stylesheet_directory_uri()?>/img/logo--full.png"
                         alt="Spencer Lane-Jones">
+                    Bristol Motor Car Specialists
                 </a>
-                <div class="text-end">
+                <div class="pe-4">
                     <?php
                     $cls = basename(get_permalink()) == 'contact' ? 'current_page_item' : '';
 ?>
-                    <ul class="navbar-nav d-flex flex-row justify-content-end gap-2">
+                    <ul class="navbar-nav d-flex flex-md-row align-items-center justify-content-md-end gap-md-3">
                         <li><a href="tel:<?=parse_phone(get_field('contact_phone', 'options'))?>"
                                 class="nav-link icon icon--phone fs-500 pt-1"></a>
+                        </li>
+                        <li>
+                            <?=do_shortcode(('[contact_email_icon class="nav-link"]'))?>
                         </li>
                         <li>
                             <?=do_shortcode(('[social_ig_icon class="nav-link"]'))?>

@@ -36,6 +36,8 @@
         </div>
 
     </div>
+    <?php
+    /*
     <div class="home-hero__right">
         <div class="home-hero__right_inner py-4">
             <img class="home-hero__logo"
@@ -50,5 +52,6 @@
                 alt="" class="home-hero__bristol">
         </div>
     </div>
-
+    */
+        ?>
 </section>
