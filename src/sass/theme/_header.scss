@@ -95,6 +95,8 @@
         img {
             max-height: 120px;
             margin-bottom: 0.5rem;
+            display: block;
+            margin-inline-end: auto;
         }
         &.logo--short {
             img {
