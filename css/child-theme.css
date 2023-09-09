@@ -14,6 +14,7 @@
   --clr-grey-400-tx: hsla(30, 1%, 72%, .25);
   --clr-white: #ffffff;
   --clr-black: #000000;
+  --clr-grey: #e9e9e9;
   --fw-400: 400;
   --fw-600: 600;
   --fs-base: 18px;
@@ -22910,55 +22911,6 @@ h3, .h3 {
   min-height: 560px;
 }
 
-@media (min-width: 992px) {
-  .text-half {
-    min-height: 560px;
-  }
-}
-.half-fluid {
-  overflow: hidden;
-}
-.half-fluid .left-half,
-.half-fluid .right-half {
-  left: 50%;
-  margin-left: -50vw;
-  max-width: 100vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
-  padding: 0;
-}
-.half-fluid .fit {
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-  height: 100%;
-  width: 100%;
-  max-height: 560px;
-}
-
-@media (min-width: 992px) {
-  .half-fluid .left-half {
-    padding-left: 0 !important;
-    position: absolute;
-    left: 0;
-    right: 50%;
-    margin-left: auto;
-    width: auto;
-  }
-  .half-fluid .right-half {
-    padding-right: 0 !important;
-    position: absolute;
-    right: 0;
-    left: 50%;
-    margin-left: auto;
-    width: auto;
-  }
-  .half-fluid .fit {
-    max-height: 100%;
-  }
-}
 .contact_form {
   font-family: var(--ff-heading);
   font-weight: var(--fw-400);
@@ -23279,6 +23231,10 @@ a.noline {
 
 .has-slj-dark-text-color {
   color: var(--clr-dark-900);
+}
+
+.bg--grey {
+  background-color: var(--clr-grey);
 }
 
 .icon {

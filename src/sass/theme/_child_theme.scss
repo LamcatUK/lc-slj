@@ -68,7 +68,6 @@ a.noline {
     color: var(--clr-light-300) !important;
 }
 
-
 .grid {
     display: grid;
 }
@@ -101,6 +100,10 @@ a.noline {
 
 .has-slj-dark-text-color {
     color: var(--clr-dark-900);
+}
+
+.bg--grey {
+    background-color: var(--clr-grey);
 }
 
 // icons
