@@ -1,34 +1,66 @@
-<section class="service-nav">
-    <div class="service-nav__inner">
-        <a href="/project-management-restoration/">
-            <img src="<?=get_stylesheet_directory_uri()?>/img/icon--project-management-restoration.svg"
-                alt="Project management & restoration">
-            <p>Project Management<br>&amp; Restoration</p>
-        </a>
-        <a href="/servicing-maintenance/">
-            <img src="<?=get_stylesheet_directory_uri()?>/img/icon--servicing-maintenance.svg"
-                alt="Servicing & maintenance">
-            <p>Servicing &amp; Maintenance</p>
-        </a>
-        <a href="/engine-building-machining/">
-            <img src="<?=get_stylesheet_directory_uri()?>/img/icon--engine-building-machining.svg"
-                alt="Engine building & machining">
-            <p>Engine Building &amp; Machining</p>
-        </a>
-        <a href="/design-development/">
-            <img src="<?=get_stylesheet_directory_uri()?>/img/icon--design-development.svg"
-                alt="Design & development">
-            <p>Design &amp; Development</p>
-        </a>
-        <a href="/welding-fabrication/">
-            <img src="<?=get_stylesheet_directory_uri()?>/img/icon--welding-fabrication.svg"
-                alt="Welding & fabrication">
-            <p>Welding &amp; Fabrication</p>
-        </a>
-        <a href="/bristol-car-parts/">
-            <img src="<?=get_stylesheet_directory_uri()?>/img/icon--bristol-car-parts.svg"
-                alt="Bristol car parts">
-            <p>Bristol Car Parts</p>
-        </a>
+<section class="nav_cards py-5">
+    <div class="container-xl">
+        <div class="row justify-content-center g-3">
+            <div class="col-sm-4">
+                <a href="/project-management-restoration/" class="nav_card">
+                    <img class="nav_card__image"
+                        src="<?=get_hero_image('project-management-restoration')?>"
+                        alt="Project Management & Restoration">
+                    <div class="nav_card__title">
+                        Project Management &amp; Restoration
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="/servicing-maintenance/" class="nav_card">
+                    <img class="nav_card__image"
+                        src="<?=get_hero_image('servicing-maintenance')?>"
+                        alt="Servicing & Maintenance">
+                    <div class="nav_card__title">
+                        Servicing &amp; Maintenance
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="/engine-building-machining/" class="nav_card">
+                    <img class="nav_card__image"
+                        src="<?=get_hero_image('engine-building-machining')?>"
+                        alt="Engine Building & Machining">
+                    <div class="nav_card__title">
+                        Engine Building &amp; Machining
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="/design-development/" class="nav_card">
+                    <img class="nav_card__image"
+                        src="<?=get_hero_image('design-development')?>"
+                        alt="Design & Development">
+                    <div class="nav_card__title">
+                        Design &amp; Development
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="/welding-fabrication/" class="nav_card">
+                    <img class="nav_card__image"
+                        src="<?=get_hero_image('welding-fabrication')?>"
+                        alt="Welding & Fabrication">
+                    <div class="nav_card__title">
+                        Welding &amp; Fabrication
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="/bristol-car-parts/" class="nav_card">
+                    <img class="nav_card__image"
+                        src="<?=get_hero_image('bristol-car-parts')?>"
+                        alt="Bristol Car Parts">
+                    <div class="nav_card__title">
+                        Bristol Car Parts
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </section>

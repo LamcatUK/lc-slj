@@ -1,23 +1,28 @@
 .nav_card {
     text-decoration: none;
+    overflow: hidden;
+    isolation: isolate;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
     &:hover {
         .nav_card__title {
             background-color: var(--clr-light-200);
         }
         .nav_card__image {
             filter: grayscale(1);
-            img {
-                transform: scale(1.02);
-            }
+            transform: scale(1.02);
         }
     }
     &__image {
-        aspect-ratio: 32 / 30;
-        object-fit: contain;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: center;
         overflow: hidden;
-        img {
-            transition: all var(--transition-duration) ease;
-        }
+        transition: all var(--transition-duration) ease;
+        z-index: -1;
+        position: relative;
     }
 
     &__title {
@@ -31,5 +36,6 @@
         font-family: var(--ff-heading);
         font-weight: var(--fw-600);
         text-transform: uppercase;
+        text-align: center;
     }
 }

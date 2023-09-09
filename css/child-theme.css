@@ -22520,24 +22520,30 @@ footer .footer-rmi {
 
 .nav_card {
   text-decoration: none;
+  overflow: hidden;
+  isolation: isolate;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
 }
 .nav_card:hover .nav_card__title {
   background-color: var(--clr-light-200);
 }
 .nav_card:hover .nav_card__image {
   filter: grayscale(1);
-}
-.nav_card:hover .nav_card__image img {
   transform: scale(1.02);
 }
 .nav_card__image {
-  aspect-ratio: 32/30;
-  -o-object-fit: contain;
-  object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
   overflow: hidden;
-}
-.nav_card__image img {
   transition: all var(--transition-duration) ease;
+  z-index: -1;
+  position: relative;
 }
 .nav_card__title {
   transition: all var(--transition-duration) ease;
@@ -22550,6 +22556,7 @@ footer .footer-rmi {
   font-family: var(--ff-heading);
   font-weight: var(--fw-600);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .team {

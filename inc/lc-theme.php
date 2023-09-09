@@ -166,3 +166,22 @@ function remove_posts_menu()
     remove_menu_page('edit.php');
 }
 add_action('admin_menu', 'remove_posts_menu');
+
+
+function get_hero_image($slug)
+{
+    $page_obj = get_page_by_path($slug);
+    $page = get_post($page_obj->ID);
+    $blocks = parse_blocks($page->post_content);
+    foreach ($blocks as $block) {
+        if ('acf/slj-short-hero' !== $block['blockName']) {
+            continue;
+        }
+
+        $img = $block['attrs']['data']['image'];
+        $image = wp_get_attachment_image_url($img, 'full');
+        return $image;
+    }
+
+    return;
+}
