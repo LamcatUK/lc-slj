@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
   --clr-light-100: #fdfcfa;
+  --hsl-light-200: 34 33% 96%;
   --clr-light-200: #f8f5f1;
   --clr-light-300: #e3ddcd;
   --clr-light-900: #7c705f;
@@ -22529,9 +22530,8 @@ footer .footer-rmi {
 .nav_card:hover .nav_card__title {
   background-color: var(--clr-light-200);
 }
-.nav_card:hover .nav_card__image {
-  filter: grayscale(1);
-  transform: scale(1.02);
+.nav_card:hover .nav_card__hover {
+  opacity: 1;
 }
 .nav_card__image {
   width: 100%;
@@ -22541,9 +22541,25 @@ footer .footer-rmi {
   -o-object-position: center;
   object-position: center;
   overflow: hidden;
-  transition: all var(--transition-duration) ease;
   z-index: -1;
+  position: absolute;
+  inset: 0;
+}
+.nav_card__rollover {
   position: relative;
+}
+.nav_card__hover {
+  background-color: hsl(var(--hsl-light-200)/0.9);
+  display: grid;
+  place-content: center;
+  width: 100%;
+  aspect-ratio: 16/9;
+  opacity: 0;
+  transition: opacity var(--transition-duration) ease;
+}
+.nav_card__hover img {
+  width: 75%;
+  margin-inline: auto;
 }
 .nav_card__title {
   transition: all var(--transition-duration) ease;
