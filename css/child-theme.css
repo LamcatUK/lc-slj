@@ -22374,8 +22374,8 @@ footer .footer-rmi {
   height: var(--hero-height);
   -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
+  -o-object-position: top;
+  object-position: top;
 }
 .hero .carousel-indicators button {
   width: 60px;
@@ -22400,6 +22400,8 @@ footer .footer-rmi {
   font-size: 25px;
   font-family: var(--ff-heading);
   color: var(--clr-light-300);
+  background-color: var(--clr-dark-800);
+  padding: 0.75rem 3rem 0.5rem 3rem;
 }
 .hero__logo {
   max-width: 150px;
