@@ -201,11 +201,7 @@
         &::after {
             content: unset;
         }
-        // transition: transform var(--transition-duration) ease;
     }
-    // .dropdown-toggle:not(.show)::after {
-    //     transform: rotate(-90deg);
-    // }
 
     .collapsing {
         transition: none !important;
