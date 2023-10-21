@@ -23101,8 +23101,8 @@ h3, .h3 {
 .gallery-grid li img {
   -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
+  -o-object-position: 0 -25px;
+  object-position: 0 -25px;
   aspect-ratio: 500/333;
   transition: all 0.5s ease;
   vertical-align: middle;
