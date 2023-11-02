@@ -42,13 +42,10 @@ $classes = $block['className'] ?? null;
 <section
     class="text_image <?=$breakout?> <?=$padding?> <?=$classes?>">
     <div class="container-xl <?=$background?>">
-        <div class="d-lg-none">
-            <h2><?=get_field('title')?></h2>
-        </div>
         <div class="row align-items-center g-4 gx-lg-5">
             <div
                 class="<?=$splitText?> <?=$orderText?>">
-                <h2 class="d-none d-lg-block">
+                <h2 class="mb-4">
                     <?=get_field('title')?>
                 </h2>
                 <div class="mb-4">
