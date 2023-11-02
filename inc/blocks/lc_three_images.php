@@ -1,7 +1,10 @@
 <?php
 $class = get_field('columns') == 2 ? 'two' : 'three';
+
+$classes = $block['className'] ?? null;
 ?>
-<section class="<?=$class?>_images__container">
+<section
+    class="<?=$class?>_images__container <?=$classes?>">
     <?php
     if (get_field('container')) {
         echo '<div class="container-xl">';
