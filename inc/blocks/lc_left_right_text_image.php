@@ -45,7 +45,7 @@ $classes = $block['className'] ?? null;
         <div class="row align-items-center g-4 gx-lg-5">
             <div
                 class="<?=$splitText?> <?=$orderText?>">
-                <h2 class="mb-4">
+                <h2 class="mb-3">
                     <?=get_field('title')?>
                 </h2>
                 <div class="mb-4">
