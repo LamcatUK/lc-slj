@@ -3,14 +3,14 @@ $class = get_field('columns') == 2 ? 'two' : 'three';
 
 $classes = $block['className'] ?? null;
 ?>
-<section
-    class="<?=$class?>_images__container <?=$classes?>">
+<section class="<?=$class?>_images__container">
     <?php
     if (get_field('container')) {
         echo '<div class="container-xl">';
     }
 ?>
-    <div class="<?=$class?>_images">
+    <div
+        class="<?=$class?>_images <?=$classes?>">
         <?php
 while (have_rows('images')) {
     the_row();
