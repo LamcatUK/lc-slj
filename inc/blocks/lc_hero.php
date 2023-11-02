@@ -43,11 +43,14 @@
             width="261" height="261">
         <?php
         }
+
+if (get_field('title') != '') {
     ?>
         <h1 class="hero__title">
             <?=get_field('title')?>
         </h1>
         <?php
+}
         if (get_field('show_specialists')) {
             ?>
         <img class="hero__specialists"
