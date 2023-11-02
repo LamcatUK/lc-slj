@@ -29,12 +29,12 @@ if (get_field('split') == '7030') {
     $splitImage = 'col-lg-2';
 }
 
-$orderText = 'order-2 order-lg-1';
-$orderImage = 'order-1 order-lg-2';
+$orderText = 'order-1 order-lg-1';
+$orderImage = 'order-2 order-lg-2';
 
 if (get_field('order') == 'image-text') {
-    $orderText = 'order-2 order-lg-2';
-    $orderImage = 'order-1 order-lg-1';
+    $orderText = 'order-1 order-lg-2';
+    $orderImage = 'order-2 order-lg-1';
 }
 
 $classes = $block['className'] ?? null;
