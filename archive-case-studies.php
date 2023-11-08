@@ -21,27 +21,19 @@ get_header();
         <?php
         while (have_posts()) {
             the_post();
-            $preview = get_field('preview', get_the_ID());
             ?>
         <div class="row">
-            <div class="col-md-4 order-md-2">
-                <div class="case_studies__image_container">
-                    <img class="imgMain"
-                        src="<?=wp_get_attachment_image_url($preview['main_image'], 'large')?>">
-                    <img class="imgSecond"
-                        src="<?=wp_get_attachment_image_url($preview['second_image'], 'large')?>">
-                    <img class="imgThird"
-                        src="<?=wp_get_attachment_image_url($preview['third_image'], 'large')?>">
-                </div>
+            <div class="col-md-3 order-md-2">
+                <img class="case_studies__image"
+                    src="<?=get_the_post_thumbnail_url(get_the_ID(), 'large')?>">
             </div>
-            <div class="col-md-8 order-md-1">
-                <h3><?=get_the_title()?></h3>
-                <p class="case_studies__date">
-                    <?=get_the_date('F Y')?>
+            <div class="col-md-9 order-md-1">
+                <h3 class="mb-4"><?=get_the_title()?></h3>
+                <p><?=get_field('teaser', get_the_ID())?>
                 </p>
-                <p><?=$preview['teaser']?></p>
                 <a href="<?=get_the_permalink()?>"
-                    class="arrowlink">Read more</a>
+                    class="arrowlink">Read
+                    more</a>
             </div>
         </div>
         <hr>

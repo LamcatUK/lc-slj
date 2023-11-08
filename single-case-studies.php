@@ -12,13 +12,7 @@ $class = is_front_page() ? '' : 'main';
         <div class="container-xl">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
-                    <div class="bc"><a href="/about-us/case-studies/">Case Studies</a> / <h1>
-                            <?=get_the_title()?>
-                        </h1>
-                    </div>
-                    <div class="cs-date">
-                        <?=get_the_date('F Y')?>
-                    </div>
+                    <h1 class="bc"><?=get_the_title()?></h1>
                 </div>
             </div>
     </section>
