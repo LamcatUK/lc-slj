@@ -22328,6 +22328,9 @@ footer .footer-rmi {
 .single-case-studies .wp-block-image {
   margin-bottom: 0;
 }
+.single-case-studies .wp-block-column .wp-block-image {
+  margin-bottom: 1rem;
+}
 
 .home-hero {
   display: grid;
