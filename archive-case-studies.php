@@ -11,7 +11,7 @@ defined('ABSPATH') || exit;
 get_header();
 ?>
 <main class="cs-index">
-    <div class="has-slj-dark-background-color py-5 text-center">
+    <div class="cs-hero has-slj-dark-background-color py-5 text-center">
         <div class="bc"><a href="/about-us/">About Us</a> / <h1>Case Studies</h1>
         </div>
     </div>

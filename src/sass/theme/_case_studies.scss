@@ -10,6 +10,12 @@
             font-size: inherit;
         }
     }
+
+    .cs-hero {
+        height: 250px;
+        display: grid;
+        place-content: center;
+    }
 }
 .case_studies {
     h2 {

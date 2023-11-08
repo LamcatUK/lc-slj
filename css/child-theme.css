@@ -22240,6 +22240,11 @@ footer .footer-rmi {
   display: inline;
   font-size: inherit;
 }
+.cs-index .cs-hero {
+  height: 250px;
+  display: grid;
+  place-content: center;
+}
 
 .case_studies h2, .case_studies .h2 {
   max-width: 38ch;
