@@ -12,8 +12,6 @@ get_header();
 ?>
 <main class="cs-index">
     <div class="has-slj-dark-background-color py-5 text-center">
-        <img src="<?=get_stylesheet_directory_uri()?>/img/slj-logo.png"
-            width="100" height="100" class="mb-4">
         <div class="bc"><a href="/about-us/">About Us</a> / <h1>Case Studies</h1>
         </div>
     </div>
