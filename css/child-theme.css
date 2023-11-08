@@ -22325,7 +22325,7 @@ footer .footer-rmi {
   content: "< ";
   transition: all var(--transition-duration) ease;
 }
-.single-case-studies figure {
+.single-case-studies .wp-block-image {
   margin-bottom: 0;
 }
 
