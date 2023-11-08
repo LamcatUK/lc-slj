@@ -22325,6 +22325,9 @@ footer .footer-rmi {
   content: "< ";
   transition: all var(--transition-duration) ease;
 }
+.single-case-studies figure {
+  margin-bottom: 0;
+}
 
 .home-hero {
   display: grid;
