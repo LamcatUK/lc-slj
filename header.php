@@ -93,24 +93,11 @@ do_action('wp_body_open');
                     <span class="navbar-icon"><i class="fa-solid fa-bars"></i></span>
                     <div class="close-icon py-1"><i class="fa-solid fa-times"></i></div>
                 </button>
-                <?php
-if (is_front_page()) {
-    ?>
                 <a class="text-center navbarFullLogo" href="/">
                     <img src="<?=get_stylesheet_directory_uri()?>/img/logo--full.png"
                         alt="Spencer Lane-Jones">
                     Bristol Motor Car Specialists
                 </a>
-                <?php
-} else {
-    ?>
-                <a class="text-center navbarFullLogo logo--short" href="/">
-                    <img src="<?=get_stylesheet_directory_uri()?>/img/logo--full.png"
-                        alt="Spencer Lane-Jones">
-                </a>
-                <?php
-}
-?>
                 <div class="pe-4">
                     <?php
                     $cls = basename(get_permalink()) == 'contact' ? 'current_page_item' : '';
