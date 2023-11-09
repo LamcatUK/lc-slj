@@ -12,7 +12,8 @@
 
     #navigation {
         background-color: var(--clr-dark-800);
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(2, 2, 2, 0.2) 0px 7px 29px 0px;
         padding-block: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
