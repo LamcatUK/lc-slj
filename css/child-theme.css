@@ -22061,10 +22061,11 @@ strong {
 }
 #navbar .navbarFullLogo {
   min-width: 200px;
+  min-width: 200px;
   color: var(--clr-light-300);
 }
 #navbar .navbarFullLogo img {
-  max-height: 120px;
+  max-height: 100px;
   margin-bottom: 0.5rem;
   display: block;
   margin-inline: auto;
@@ -23175,19 +23176,16 @@ h3, .h3 {
 }
 
 :root {
-  --margin-top--mobile: 52px;
-  --margin-top--sm-desktop: 80px;
-  --margin-top--lg-desktop: 115px;
+  --margin-top--mobile: 130px;
+  --margin-top--sm-desktop: 130px;
+  --margin-top--lg-desktop: 148px;
+  --margin-top--xl-desktop: 160px;
   --footer-height--mobile: 72px;
   --footer-height--desktop: 43px;
 }
 
 main {
   margin-top: var(--margin-top--mobile);
-}
-main.front {
-  --margin-top--sm-desktop: 80px;
-  --margin-top--lg-desktop: 145px;
 }
 @media (min-width: 992px) {
   main {
@@ -23197,6 +23195,11 @@ main.front {
 @media (min-width: 1200px) {
   main {
     margin-top: var(--margin-top--lg-desktop);
+  }
+}
+@media (min-width: 1400px) {
+  main {
+    margin-top: var(--margin-top--xl-desktop);
   }
 }
 

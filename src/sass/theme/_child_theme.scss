@@ -7,24 +7,28 @@
 @import "blocks/blocks";
 
 :root {
-    --margin-top--mobile: 52px;
-    --margin-top--sm-desktop: 80px;
-    --margin-top--lg-desktop: 115px;
+    --margin-top--mobile: 130px;
+    --margin-top--sm-desktop: 130px;
+    --margin-top--lg-desktop: 148px;
+    --margin-top--xl-desktop: 160px;
     --footer-height--mobile: 72px;
     --footer-height--desktop: 43px;
 }
 
 main {
-    &.front {
-        --margin-top--sm-desktop: 80px;
-        --margin-top--lg-desktop: 145px;
-    }
+    // &.front {
+    //     --margin-top--sm-desktop: 80px;
+    //     --margin-top--lg-desktop: 180px;
+    // }
     margin-top: var(--margin-top--mobile);
     @media (min-width:992px) {
         margin-top: var(--margin-top--sm-desktop);
     }
     @media (min-width:1200px) {
         margin-top: var(--margin-top--lg-desktop);
+    }
+    @media (min-width:1400px) {
+        margin-top: var(--margin-top--xl-desktop);
     }
     // min-height: calc(100vh - var(--margin-top--mobile) - var(--footer-height--mobile));
     // @media (min-width:768px) {
