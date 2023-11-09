@@ -11,7 +11,7 @@ $modal = 0;
         font-family: var(--ff-heading);
     }
 </style>
-<main id="main" class="plain-page">
+<main id="main" class="plain-page pt-5">
     <div class="container-xl py-5">
         <h1 class="mb-4 text-center"><?=get_the_title()?></h1>
         <?php
