@@ -5,6 +5,9 @@
             $terms = get_terms(array('taxonomy' => 'attachment_category','hide_empty' => false));
             foreach ($terms as $t) {
                 $model = $t->slug;
+                if ($model == 'arnolt-bristol') {
+                    continue;
+                }
                 ?>
             <a href="/gallery/?model=<?=$model?>"
                 class="parade_card">
