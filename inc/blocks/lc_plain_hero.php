@@ -3,7 +3,8 @@
         width="100" height="100" class="mb-4">
     <div class="bc">
         <?php
-    if (wp_get_post_parent_id(get_the_ID()) != 0) {
+    $gallery = get_page_by_path('about-us/gallery');
+    if (wp_get_post_parent_id(get_the_ID()) != 0 && get_the_ID() != $gallery->ID) {
         ?>
         <a href="/about-us/">About Us</a> /
         <?php
