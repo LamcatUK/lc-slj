@@ -1,5 +1,5 @@
 <?php
-$subject = $_GET['subject'] ?: 'General Enquiry';
+$subject = $_GET['subject'] ?? 'General Enquiry';
 ?>
 <section class="contact_buttons py-5">
     <div class="container-xl">
