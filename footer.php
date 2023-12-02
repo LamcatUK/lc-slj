@@ -12,7 +12,7 @@ defined('ABSPATH') || exit;
 
 $about = get_page_by_path('about-us');
 $gallery = get_page_by_path('about-us/gallery');
-$pm = get_page_by_path('project-management-restoration');
+// $pm = get_page_by_path('project-management-restoration');
 
 switch (get_the_ID()) {
     case $gallery->ID:
@@ -21,9 +21,9 @@ switch (get_the_ID()) {
     case $about->ID:
         $class = 'has-slj-light-background-color';
         break;
-    case $pm->ID:
-        $class = 'bg--grey';
-        break;
+        // case $pm->ID:
+        //     $class = 'bg--grey';
+        //     break;
     default:
         $class = '';
 }
