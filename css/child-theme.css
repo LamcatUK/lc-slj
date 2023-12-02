@@ -22358,7 +22358,12 @@ footer .footer-rmi {
 .home-hero .carousel-item {
   height: 100%;
   background-size: cover;
-  background-position: 100% 75%;
+  background-position: left;
+}
+@media (min-width: 768px) {
+  .home-hero .carousel-item {
+    background-position: 100% 75%;
+  }
 }
 .home-hero__right {
   background-color: var(--clr-dark-900);

@@ -16,10 +16,10 @@
         height: 100%;
         background-size: cover;
         // background-position: center;
-        background-position: 100% 75%;
-        // @media (min-width: 992px) {
-        //     clip-path: ellipse(100% 150% at 0% 50%);
-        // }
+        background-position: left;
+        @media (min-width:768px) {
+            background-position: 100% 75%;
+        }
     }
 
     &__right {
