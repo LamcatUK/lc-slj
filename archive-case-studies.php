@@ -17,9 +17,10 @@ get_header();
     </div>
     <div class="case_studies container-xl py-5">
         <?php
-        while (have_posts()) {
-            the_post();
-            ?>
+if (have_posts()) {
+    while (have_posts()) {
+        the_post();
+        ?>
         <div class="row">
             <div class="col-md-3 order-md-2">
                 <img class="case_studies__image"
@@ -36,7 +37,23 @@ get_header();
         </div>
         <hr>
         <?php
-        }
+    }
+} else {
+    ?>
+        <div class="row">
+            <div class="col-md-3 order-md-2">
+                <img class="case_studies__image"
+                    src="<?=get_stylesheet_directory_uri()?>/img/slj-logo--dark.png"
+                    width=190 height=190>
+            </div>
+            <div class="col-md-9 order-md-1">
+                <h3 class="mb-4">Case studies coming soon</h3>
+            </div>
+        </div>
+        <hr>
+        <?php
+}
+
 ?>
     </div>
 </main>
