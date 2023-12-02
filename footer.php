@@ -9,7 +9,32 @@
 
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
+
+$about = get_page_by_path('about-us');
+$gallery = get_page_by_path('about-us/gallery');
+$pm = get_page_by_path('project-management-restoration');
+
+switch (get_the_ID()) {
+    case $gallery->ID:
+        $class = 'has-slj-dark-background-color';
+        break;
+    case $about->ID:
+        $class = 'has-slj-light-background-color';
+        break;
+    case $pm->ID:
+        $class = 'bg--grey';
+        break;
+    default:
+        $class = '';
+}
+
 ?>
+<div class="pre_footer <?=$class?>">
+    <div class="container-xl py-5 text-center">
+        <img src="<?=get_stylesheet_directory_uri()?>/img/bristol-logo.png"
+            alt="" width=150 height=150>
+    </div>
+</div>
 <footer class="">
     <div class="footer-main container-xl py-5">
         <div class="row gy-4">
