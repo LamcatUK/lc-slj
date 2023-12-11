@@ -10,7 +10,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_hero.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'hero', 'slideshow' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -31,7 +30,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_home_hero.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'hero', 'slideshow' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -42,7 +40,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_short_hero.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'hero', 'short' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -53,7 +50,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_service-nav.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'service', 'nav' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -64,7 +60,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_team.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'team', 'cards' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -75,7 +70,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_team-alt.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'team', 'cards', 'alt' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -86,7 +80,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_two_col_title.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'two', 'col', 'title' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -97,7 +90,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_one_col_title.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'one', 'col', 'title' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true, 'color' => true,),
         ));
@@ -108,7 +100,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_parade.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'bristol', 'car', 'parade' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -119,7 +110,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_slides.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'slides' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -130,7 +120,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_nav_cards.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'nav', 'cards' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -141,7 +130,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_three_images.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'three', 'images' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -152,7 +140,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_breadcrumbs.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'breadcrumbs' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true, 'color' => true),
         ));
@@ -163,7 +150,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_gallery.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'gallery' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -174,7 +160,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_case_studies.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'case', 'studies' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -185,7 +170,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_left_right_text_image.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'left', 'right', 'text', 'image' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -196,7 +180,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_contact_buttons.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'contact', 'buttons' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -207,7 +190,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_contact_form.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'contact', 'form' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -218,7 +200,6 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_address_map.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'address', 'map' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
@@ -229,18 +210,26 @@ function acf_blocks()
             'render_template'	=> 'inc/blocks/lc_testimonials.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'testimonials' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true, 'color' => true),
         ));
         acf_register_block(array(
-            'name'				=> 'SLG IG Banner',
+            'name'				=> 'SLJ IG Banner',
             'title'				=> __('SLJ Instagram Banner'),
             'description'		=> __(''),
             'render_template'	=> 'inc/blocks/lc_ig_banner.php',
             'category'			=> 'layout',
             'icon'				=> 'excerpt-view',
-            'keywords'			=> array( 'instagram' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false, 'anchor' => true, 'color' => true),
+        ));
+        acf_register_block(array(
+            'name'				=> 'SLJ Vimeo',
+            'title'				=> __('SLJ Vimeo'),
+            'description'		=> __(''),
+            'render_template'	=> 'inc/blocks/lc_vimeo.php',
+            'category'			=> 'layout',
+            'icon'				=> 'excerpt-view',
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true, 'color' => true),
         ));
