@@ -71,11 +71,11 @@ defined('ABSPATH') || exit;
     <!-- End Google Tag Manager -->
     <?php
     }
-    if (get_field('google_site_verification', 'options')) {
-        echo '<meta name="google-site-verification" content="' . get_field('google_site_verification', 'options') . '" />';
+    if (get_field('google_verification_code', 'options')) {
+        echo '<meta name="google-site-verification" content="' . get_field('google_verification_code', 'options') . '" />';
     }
-    if (get_field('bing_site_verification', 'options')) {
-        echo '<meta name="msvalidate.01" content="' . get_field('bing_site_verification', 'options') . '" />';
+    if (get_field('bing_siverification_code', 'options')) {
+        echo '<meta name="msvalidate.01" content="' . get_field('bing_siverification_code', 'options') . '" />';
     }
 ?>
     <?php wp_head(); ?>
