@@ -40,12 +40,22 @@ $img = get_field('image', $model);
                     <div><strong>Vehicle Model:</strong>
                         <?=$name?>
                     </div>
+                    <?php
+                    if (get_field('registration') ?? null) {
+                        ?>
                     <div><strong>Registration:</strong>
                         <?=get_field('registration')?>
                     </div>
+                    <?php
+                    }
+if (get_field('year_of_manufacture') ?? null) {
+    ?>
                     <div><strong>Year of Manufacture:</strong>
                         <?=get_field('year_of_manufacture')?>
                     </div>
+                    <?php
+}
+?>
                 </div>
                 <?php
 the_post();
